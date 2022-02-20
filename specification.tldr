@@ -1,0 +1,755 @@
+{
+  "document": {
+    "id": "doc",
+    "name": "New Document",
+    "version": 15.3,
+    "pages": {
+      "page": {
+        "id": "page",
+        "name": "Page 1",
+        "childIndex": 1,
+        "shapes": {
+          "41635032-9d83-482b-0145-a94a816e726f": {
+            "id": "41635032-9d83-482b-0145-a94a816e726f",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              766.8,
+              379.2
+            ],
+            "size": [
+              154.6,
+              173.76
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "BackEnd\n(Rust)",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "e9ca6d1a-ee10-4fe1-11bf-a4c99e55cc4b": {
+            "id": "e9ca6d1a-ee10-4fe1-11bf-a4c99e55cc4b",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 3,
+            "point": [
+              1297.2,
+              371.96
+            ],
+            "size": [
+              268.6,
+              188.82
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Google Translate API",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "cd5ac6b2-af56-4c8b-3d84-739cd025b24a": {
+            "id": "cd5ac6b2-af56-4c8b-3d84-739cd025b24a",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 4,
+            "point": [
+              148.8,
+              -62.48
+            ],
+            "radius": [
+              70,
+              70
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "User",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "4a765366-c372-46a1-37cc-6992746ae36e": {
+            "id": "4a765366-c372-46a1-37cc-6992746ae36e",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 5,
+            "point": [
+              270.34,
+              -139.35
+            ],
+            "rotation": 0,
+            "bend": 0.31089745698891336,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  -21.97,
+                  83.42
+                ],
+                "canBind": true,
+                "bindingId": "0b622cfa-9a80-4af2-2d05-59e101117b80"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  477.26,
+                  71.78
+                ],
+                "canBind": true,
+                "bindingId": "768d3bb2-176d-483a-238d-71268b866b48"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  225.84,
+                  0
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "1. Select language that\nuser want to translate to\n2. Submit the sentence written\nby user's native language",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "02ebd300-ac3f-46cf-1f1c-359d5cd29e87": {
+            "id": "02ebd300-ac3f-46cf-1f1c-359d5cd29e87",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 6,
+            "point": [
+              921.4,
+              397.98
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0.16
+                ],
+                "canBind": true,
+                "bindingId": "6387a855-ff05-4766-1a75-0874c6dcea6d"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  359.8,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "2441f2b3-6187-46c4-14f2-eb02274ab8a1"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  179.9,
+                  0.08
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Request to translate",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "f107014e-5384-4478-1d8d-935992917ba7": {
+            "id": "f107014e-5384-4478-1d8d-935992917ba7",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 7,
+            "point": [
+              953.06,
+              548.92
+            ],
+            "rotation": 0,
+            "bend": 0.3299438641061505,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  344.14,
+                  -5.38
+                ],
+                "canBind": true,
+                "bindingId": "7c26f5c5-6cde-4e33-03c8-f73e1f06cf0a"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  -15.66,
+                  -11.22
+                ],
+                "canBind": true,
+                "bindingId": "4a20a881-20f0-4e99-131c-de4059f333e0"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  163.28,
+                  51.06
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Response below\nresule\nerror",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "bda5ea91-29e3-4888-19d7-b24f5057ec0f": {
+            "id": "bda5ea91-29e3-4888-19d7-b24f5057ec0f",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              296.73,
+              6.7
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  466.87,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  4.16
+                ],
+                "canBind": true,
+                "bindingId": "54d8c93b-732e-420a-0a42-3f67ac1f9363"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  233.44,
+                  2.08
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Display the result of translating",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "cbf2515f-f74f-499e-1f5c-8fe050783239": {
+            "id": "cbf2515f-f74f-499e-1f5c-8fe050783239",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 3,
+            "point": [
+              763.6,
+              -86.66
+            ],
+            "size": [
+              154.6,
+              173.76
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "FrontEnd\n(Svelte)",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "912e1e6e-d84f-44fd-3196-9210fb2f79a6": {
+            "id": "912e1e6e-d84f-44fd-3196-9210fb2f79a6",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 9,
+            "point": [
+              914.13,
+              98.34
+            ],
+            "rotation": 0,
+            "bend": 0.4026692600713903,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  -10.3,
+                  -11.24
+                ],
+                "canBind": true,
+                "bindingId": "04e397b9-1ebc-4695-0d31-19c8d20738ea"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  -6.3,
+                  264.86
+                ],
+                "canBind": true,
+                "bindingId": "bf6e6147-3046-4e84-1a7e-600e7ebbcea6"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  47.29,
+                  126
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Send a sentence which\nuser want to translate\nfrom A to B language",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "a34ad857-12d8-4b82-2af1-699c0e55f8d2": {
+            "id": "a34ad857-12d8-4b82-2af1-699c0e55f8d2",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 10,
+            "point": [
+              872.4,
+              -240.44
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "- Elements -\nLang form: from, to\n Sentence form\n Submit Button\n Panel to display Result",
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "e9feb6a9-b7c5-42b5-3227-97e6acc7654b": {
+            "id": "e9feb6a9-b7c5-42b5-3227-97e6acc7654b",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              718.81,
+              113.03
+            ],
+            "rotation": 0,
+            "bend": 0.5173856145703931,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  71.28,
+                  266.17
+                ],
+                "canBind": true,
+                "bindingId": "cd7fc17f-f9dc-40d4-3a8e-93464a7273a1"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  71.58,
+                  -9.93
+                ],
+                "canBind": true,
+                "bindingId": "bf52c12f-934a-408a-02dc-fb4eb546621b"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  0,
+                  128.04
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Response below\n* The result of translation\n* Some kind of error",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "f7c7fe13-abad-43e9-398c-2dfa94f6f754": {
+            "id": "f7c7fe13-abad-43e9-398c-2dfa94f6f754",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              954.4,
+              67.66
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "- Request -\nfrom lang\n  to lang\n source sentence\n ",
+            "rotation": 0.24876917923183672,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "9f9590b1-dbc4-41cc-26e5-b28858989a0c": {
+            "id": "9f9590b1-dbc4-41cc-26e5-b28858989a0c",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 0.5,
+            "point": [
+              394.4,
+              186.16
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "- Response -\nSuccess\nThe result of translation \n Error\n ",
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "c4d687d1-141b-4103-0f59-96adaeacbb34": {
+            "id": "c4d687d1-141b-4103-0f59-96adaeacbb34",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 0.25,
+            "point": [
+              667.4,
+              -171
+            ],
+            "size": [
+              335.8,
+              773.18
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "dashed",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "7aa6ac79-169d-4bb9-1d8f-f4f2ca0faa54": {
+            "id": "7aa6ac79-169d-4bb9-1d8f-f4f2ca0faa54",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 12,
+            "point": [
+              780.6,
+              602
+            ],
+            "rotation": 0,
+            "text": "Desktop App",
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "dashed",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          }
+        },
+        "bindings": {
+          "2441f2b3-6187-46c4-14f2-eb02274ab8a1": {
+            "id": "2441f2b3-6187-46c4-14f2-eb02274ab8a1",
+            "type": "arrow",
+            "fromId": "02ebd300-ac3f-46cf-1f1c-359d5cd29e87",
+            "toId": "e9ca6d1a-ee10-4fe1-11bf-a4c99e55cc4b",
+            "handleId": "end",
+            "point": [
+              0.51,
+              0.19
+            ],
+            "distance": 16
+          },
+          "6387a855-ff05-4766-1a75-0874c6dcea6d": {
+            "id": "6387a855-ff05-4766-1a75-0874c6dcea6d",
+            "type": "arrow",
+            "fromId": "02ebd300-ac3f-46cf-1f1c-359d5cd29e87",
+            "toId": "41635032-9d83-482b-0145-a94a816e726f",
+            "handleId": "start",
+            "point": [
+              0.46,
+              0.17
+            ],
+            "distance": 16
+          },
+          "04e397b9-1ebc-4695-0d31-19c8d20738ea": {
+            "id": "04e397b9-1ebc-4695-0d31-19c8d20738ea",
+            "type": "arrow",
+            "fromId": "912e1e6e-d84f-44fd-3196-9210fb2f79a6",
+            "toId": "cbf2515f-f74f-499e-1f5c-8fe050783239",
+            "handleId": "start",
+            "point": [
+              0.83,
+              0.47
+            ],
+            "distance": 16
+          },
+          "bf6e6147-3046-4e84-1a7e-600e7ebbcea6": {
+            "id": "bf6e6147-3046-4e84-1a7e-600e7ebbcea6",
+            "type": "arrow",
+            "fromId": "912e1e6e-d84f-44fd-3196-9210fb2f79a6",
+            "toId": "41635032-9d83-482b-0145-a94a816e726f",
+            "handleId": "end",
+            "point": [
+              0.85,
+              0.53
+            ],
+            "distance": 16
+          },
+          "4a20a881-20f0-4e99-131c-de4059f333e0": {
+            "id": "4a20a881-20f0-4e99-131c-de4059f333e0",
+            "type": "arrow",
+            "fromId": "f107014e-5384-4478-1d8d-935992917ba7",
+            "toId": "41635032-9d83-482b-0145-a94a816e726f",
+            "handleId": "end",
+            "point": [
+              0.45,
+              0.84
+            ],
+            "distance": 16
+          },
+          "7c26f5c5-6cde-4e33-03c8-f73e1f06cf0a": {
+            "id": "7c26f5c5-6cde-4e33-03c8-f73e1f06cf0a",
+            "type": "arrow",
+            "fromId": "f107014e-5384-4478-1d8d-935992917ba7",
+            "toId": "e9ca6d1a-ee10-4fe1-11bf-a4c99e55cc4b",
+            "handleId": "start",
+            "point": [
+              0.53,
+              0.86
+            ],
+            "distance": 16
+          },
+          "54d8c93b-732e-420a-0a42-3f67ac1f9363": {
+            "id": "54d8c93b-732e-420a-0a42-3f67ac1f9363",
+            "type": "arrow",
+            "fromId": "bda5ea91-29e3-4888-19d7-b24f5057ec0f",
+            "toId": "cd5ac6b2-af56-4c8b-3d84-739cd025b24a",
+            "handleId": "end",
+            "point": [
+              0.89,
+              0.52
+            ],
+            "distance": 8
+          },
+          "0b622cfa-9a80-4af2-2d05-59e101117b80": {
+            "id": "0b622cfa-9a80-4af2-2d05-59e101117b80",
+            "type": "arrow",
+            "fromId": "4a765366-c372-46a1-37cc-6992746ae36e",
+            "toId": "cd5ac6b2-af56-4c8b-3d84-739cd025b24a",
+            "handleId": "start",
+            "point": [
+              0.72,
+              0.13
+            ],
+            "distance": 8
+          },
+          "768d3bb2-176d-483a-238d-71268b866b48": {
+            "id": "768d3bb2-176d-483a-238d-71268b866b48",
+            "type": "arrow",
+            "fromId": "4a765366-c372-46a1-37cc-6992746ae36e",
+            "toId": "cbf2515f-f74f-499e-1f5c-8fe050783239",
+            "handleId": "end",
+            "point": [
+              0.97,
+              0.15
+            ],
+            "distance": 16
+          },
+          "cd7fc17f-f9dc-40d4-3a8e-93464a7273a1": {
+            "id": "cd7fc17f-f9dc-40d4-3a8e-93464a7273a1",
+            "type": "arrow",
+            "fromId": "e9feb6a9-b7c5-42b5-3227-97e6acc7654b",
+            "toId": "41635032-9d83-482b-0145-a94a816e726f",
+            "handleId": "start",
+            "point": [
+              0.21,
+              0.54
+            ],
+            "distance": 16
+          },
+          "bf52c12f-934a-408a-02dc-fb4eb546621b": {
+            "id": "bf52c12f-934a-408a-02dc-fb4eb546621b",
+            "type": "arrow",
+            "fromId": "e9feb6a9-b7c5-42b5-3227-97e6acc7654b",
+            "toId": "cbf2515f-f74f-499e-1f5c-8fe050783239",
+            "handleId": "end",
+            "point": [
+              0.23,
+              0.43
+            ],
+            "distance": 16
+          }
+        }
+      }
+    },
+    "pageStates": {
+      "page": {
+        "id": "page",
+        "selectedIds": [
+          "5d1861fa-4437-40f7-1e42-07871bbda3d4"
+        ],
+        "camera": {
+          "point": [
+            0,
+            0
+          ],
+          "zoom": 1
+        },
+        "editingId": null
+      }
+    },
+    "assets": {}
+  },
+  "assets": {}
+}
