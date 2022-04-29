@@ -1,8 +1,9 @@
-use std::{env, io::{Read, self, Write}, fs::File};
+use std::{env, io::{Read, self, Write, Error, ErrorKind}, fs::File};
 
 use clap::Parser;
 use dotenv::dotenv;
 use reqwest::header::HeaderValue;
+use serde::Deserialize;
 
 #[derive(Parser, Debug)]
 struct CliArgs {
@@ -14,13 +15,23 @@ struct CliArgs {
     to_path: std::path::PathBuf,
 }
 
-// https://rust-cli.github.io/book/tutorial/cli-args.html
+#[derive(Deserialize, Debug)]
+struct Sentence {
+    trans: Option<String>,
+}
+
+#[derive(Deserialize, Debug)]
+struct Response {
+    sentences: Vec<Sentence>,
+}
+
 #[tokio::main]
 async fn main() -> io::Result<()>{
     let args = CliArgs::parse();
-    println!("{:?}", args);
 
-    let mut f = File::open(args.from_path.as_path())?;
+    let mut f = File::open(args.from_path.as_path()).unwrap_or_else(|error| {
+        panic!("Error caused by from_path option: {:?}", error.to_string())
+    });
     let mut buffer = String::new();
     f.read_to_string(&mut buffer)?;
 
@@ -44,8 +55,21 @@ async fn main() -> io::Result<()>{
         .unwrap();
 
     let mut tf =  File::create(args.to_path)?;
-    let res_buffer = res.text().await.unwrap();
-    tf.write_fmt(format_args!("{}", res_buffer));
+    let translated = match res.json::<Response>().await {
+        Ok(translated) => translated,
+        Err(e) => {
+            eprintln!("Fail to deserialize json: err = {:?}", e);
+            Response {
+                sentences: vec![],
+            }
+        }
+    };
 
-    Ok(())
+    match &translated.sentences[0].trans {
+        Some(trans) => {
+            tf.write_fmt(format_args!("{}", trans)).unwrap();
+            Ok(())
+        },
+        _ => Err(Error::new(ErrorKind::Other, "Not found translated text")),
+    }
 }
