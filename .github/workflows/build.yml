@@ -9,6 +9,9 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - name: Cargo cache
@@ -22,10 +25,12 @@ jobs:
         with:
           command: test
           args: --verbose
-        working-directory: ./translator-cli
   x86_64-unknown-linux-gnu:
     name: x86_64-unknown-linux-gnu
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -45,10 +50,12 @@ jobs:
           use-cross: true
           command: build
           args: --target x86_64-unknown-linux-gnu
-        working-directory: ./translator-cli
   x86_64-unknown-linux-musl:
     name: x86_64-unknown-linux-musl
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -68,11 +75,13 @@ jobs:
           use-cross: true
           command: build
           args: --target x86_64-unknown-linux-musl
-        working-directory: ./translator-cli
 
   aarch64-unknown-linux-gnu:
     name: aarch64-unknown-linux-gnu
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -92,11 +101,13 @@ jobs:
           use-cross: true
           command: build
           args: --target aarch64-unknown-linux-gnu
-        working-directory: ./translator-cli
 
   aarch64-unknown-linux-musl:
     name: aarch64-unknown-linux-musl
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -116,11 +127,13 @@ jobs:
           use-cross: true
           command: build
           args: --target aarch64-unknown-linux-musl
-        working-directory: ./translator-cli
 
   arm-unknown-linux-gnueabihf:
     name: arm-unknown-linux-gnueabihf
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -140,11 +153,13 @@ jobs:
           use-cross: true
           command: build
           args: --target arm-unknown-linux-gnueabihf
-        working-directory: ./translator-cli
 
   arm-unknown-linux-musleabihf:
     name: arm-unknown-linux-musleabihf
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -164,11 +179,13 @@ jobs:
           use-cross: true
           command: build
           args: --target arm-unknown-linux-musleabihf
-        working-directory: ./translator-cli
 
   x86_64-apple-darwin:
     name: x86_64-apple-darwin
     runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -188,11 +205,13 @@ jobs:
           use-cross: true
           command: build
           args: --target x86_64-apple-darwin
-        working-directory: ./translator-cli
 
   x86_64-pc-windows-gnu:
     name: x86_64-pc-windows-gnu
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -212,11 +231,13 @@ jobs:
           use-cross: true
           command: build
           args: --target x86_64-pc-windows-gnu
-        working-directory: ./translator-cli
 
   prepare:
     name: others
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - name: List target
         run: find ./translator-cli/target
@@ -245,6 +266,9 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./translator-cli
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v2
