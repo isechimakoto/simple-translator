@@ -18,12 +18,11 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: test-cargo-registry
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           command: test
           args: --verbose
+        working-directory: ./translator-cli
   x86_64-unknown-linux-gnu:
     name: x86_64-unknown-linux-gnu
     runs-on: ubuntu-latest
@@ -41,13 +40,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-x86_64-unknown-linux-gnu
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target x86_64-unknown-linux-gnu
+        working-directory: ./translator-cli
   x86_64-unknown-linux-musl:
     name: x86_64-unknown-linux-musl
     runs-on: ubuntu-latest
@@ -65,13 +63,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-x86_64-unknown-linux-musl
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target x86_64-unknown-linux-musl
+        working-directory: ./translator-cli
 
   aarch64-unknown-linux-gnu:
     name: aarch64-unknown-linux-gnu
@@ -90,13 +87,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-aarch64-unknown-linux-gnu
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target aarch64-unknown-linux-gnu
+        working-directory: ./translator-cli
 
   aarch64-unknown-linux-musl:
     name: aarch64-unknown-linux-musl
@@ -115,13 +111,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-aarch64-unknown-linux-musl
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target aarch64-unknown-linux-musl
+        working-directory: ./translator-cli
 
   arm-unknown-linux-gnueabihf:
     name: arm-unknown-linux-gnueabihf
@@ -140,13 +135,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-arm-unknown-linux-gnueabihf
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target arm-unknown-linux-gnueabihf
+        working-directory: ./translator-cli
 
   arm-unknown-linux-musleabihf:
     name: arm-unknown-linux-musleabihf
@@ -165,13 +159,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-registry-arm-unknown-linux-musleabihf
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target arm-unknown-linux-musleabihf
+        working-directory: ./translator-cli
 
   x86_64-apple-darwin:
     name: x86_64-apple-darwin
@@ -190,13 +183,12 @@ jobs:
             ~/.cargo/registry
             ./translator-cli/target
           key: build-cargo-reg-x86_64-apple-darwinistry
-      - name: Change directory
-        run: cd translator-cli
       - uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
           args: --target x86_64-apple-darwin
+        working-directory: ./translator-cli
 
   x86_64-pc-windows-gnu:
     name: x86_64-pc-windows-gnu
@@ -214,7 +206,13 @@ jobs:
           path: |
             ~/.cargo/registry
             ./translator-cli/target
-          key: build-cargo-regis-x86_64-pc-windows-gnutry
+          key: build-cargo-regis-x86_64-pc-windows-gnu
+      - uses: actions-rs/cargo@v1
+        with:
+          use-cross: true
+          command: build
+          args: --target x86_64-pc-windows-gnu
+        working-directory: ./translator-cli
 
   prepare:
     name: others
